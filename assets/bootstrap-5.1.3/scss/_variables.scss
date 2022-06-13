@@ -75,6 +75,7 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$purple2:       #cf649a  // ========================= variable '$purple2', color agragado (valor)
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +87,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "purple":     $purple2 // =============================== se agrega la variable al mapa de colores por tema
 ) !default;
 // scss-docs-end theme-colors-map
 
