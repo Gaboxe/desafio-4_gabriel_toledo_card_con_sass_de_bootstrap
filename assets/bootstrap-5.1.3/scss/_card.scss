@@ -3,6 +3,11 @@
 //
 
 .card {
+  // INICIO ===== Se reutilizan otras clases en la 'clase .card'
+  @extend .bg-dark;
+  @extend .text-light;
+  @extend .fst-italic;
+  // FIN ===== Se reutilizan otras clases en la 'clase .card'
   position: relative;
   display: flex;
   flex-direction: column;
@@ -52,6 +57,9 @@
 }
 
 .card-title {
+  // INICIO ===== Se reutilizan otras clases en la 'clase .card'
+  @extend .text-purple;
+  // FIN ===== Se reutilizan otras clases en la 'clase .card'
   margin-bottom: $card-title-spacer-y;
 }
 

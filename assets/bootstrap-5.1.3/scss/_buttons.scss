@@ -3,6 +3,10 @@
 //
 
 .btn {
+  // INICIO ===== Se reutilizan otras clases en la 'clase .card'
+  @extend .bg-purple;
+  @extend .text-light;
+  // FIN ===== Se reutilizan otras clases en la 'clase .card'
   display: inline-block;
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
