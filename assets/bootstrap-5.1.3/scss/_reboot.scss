@@ -47,6 +47,9 @@
 
 // scss-docs-start reboot-body-rules
 body {
+  // INICIO ===== Se reutilizan otras clases en la 'clase .body'
+  @extend .bg-fondo;
+  // FIN ===== Se reutilizan otras clases en la 'clase .body'
   margin: 0; // 1
   font-family: var(--#{$variable-prefix}body-font-family);
   @include font-size(var(--#{$variable-prefix}body-font-size));

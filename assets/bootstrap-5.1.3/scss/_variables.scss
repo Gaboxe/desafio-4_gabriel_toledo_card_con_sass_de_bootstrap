@@ -76,6 +76,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $purple2:       #cf649a;  // ========================= variable '$purple2', color agragado (valor)
+$fondo:         #2D2784; // ========================= variable '$fondo', color agragado (valor)
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -88,7 +89,8 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "purple":     $purple2 // =============================== se agrega la variable al mapa de colores por tema
+  "purple":     $purple2, // =============================== se agrega la variable al mapa de colores por tema "purple"
+  "fondo":      $fondo  // =============================== se agrega la variable al mapa de colores por tema "fondo"
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -576,7 +578,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap'); // ====== @import tipo de fuente desde, Google Fonts, 'Vujahday Script'
+$font-family-sans-serif:      'Vujahday Script', cursive, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
